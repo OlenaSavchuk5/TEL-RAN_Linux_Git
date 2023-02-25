@@ -1,0 +1,26 @@
+1. Создать файл в папке /temp и записать в него фразу “Hello student”
+
+2. Добавить в него информацию из файла /etc/group (всю)
+
+3. Добавить последнюю строку из команды df -h
+
+4. Добавить посчитанное количество строк из истории команд
+
+5. Историю записать в файл
+
+6. Файл истории прислать в личном кабинете 
+
+
+#!/bin/bash
+
+1. echo „Hello Student“ > /tmp/elena.txt
+
+2. /etc/group >> /tmp/elena.txt
+
+3. df -h | tail -1 >> /tmp/elena.txt
+
+4. history | wc -l
+
+5. history > /tmp/elenahistory.txt
+
+6. export_file /tmp/elenahistory.txt
